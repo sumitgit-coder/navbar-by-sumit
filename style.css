@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary: #0c51e7;
+    --dark: #030303;
+    --pure: #FFFFFF;
+    --ternary: #2c3e50;
+    --lightp: #0082e6;
+    --secondary: #1b9bff;
+    --orange: #FF4E4E;
+}
+
+body {
+    list-style: none;
+    font-family: 'Flamenco', cursive;
+}
+
+nav {
+    background: var(--primary);
+    height: 80px;
+    width: 100%;
+}
+
+label.mylogo {
+    color: var(--pure);
+    font-size: 36px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bolder;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: var(--pure);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.ON,
+a:hover {
+    background: var(--secondary);
+    transition: .5s;
+}
+
+.markbtn {
+    font-size: 30px;
+    color: var(--pure);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.markbtn1 {
+    font-size: 30px;
+    color: var(--orange);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.copy {
+    display: none;
+}
+
+#mark {
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.mylogo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px) {
+    .markbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--ternary);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.ON {
+        background: none;
+        color: var(--lightp);
+    }
+    #mark:checked~ul {
+        left: 0;
+    }
+    #mark:checked~.markbtn1 {
+        display: block;
+    }
+    #mark:checked~.markbtn {
+        display: none;
+    }
+    .copy {
+        display: block;
+    }
+}
+
+
+/* copy mark eazycodes */
+
+.copy {
+    text-align: center;
+    align-items: center;
+}
+
+.copy a {
+    color: var(--pure);
+}
+
+.copy a #ic {
+    color: #FF4E4E;
+}
+
+.copy1 {
+    margin-top: 580px;
+    text-align: center;
+    align-items: center;
+}
