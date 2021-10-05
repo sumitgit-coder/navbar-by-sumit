@@ -14,50 +14,7 @@
     --secondary: #1b9bff;
     --orange: #FF4E4E;
 }
-:root{
-	--tran: all 0.3s linear;
-}
-html{
-	font-size: 62.5%;
-}
-.main_div{
-	width: 100vw;
-	height: 100vh;
-	background-color: hsl(206,21%,94%);
-	display: grid;
-	place-items:center;
-}
-a{
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 40px;
-	padding: 1.6px 32px;
-	border:1px solid #1e272e;
-	font-family: 'Pacifico', cursive;
-	color: #1e272e;
-	position: relative;
-	z-index: 1;
-	transition: var(--tran);
-	overflow: hidden;
-}
-a::before{
-	content:"";
-	position: absolute;
-	top:0;
-	left:0;
-	background-color: #1e272e;
-	width: 100%;
-	height: 100%;
-	transform: translateX(-100%);
-	transition: var(--tran);
-}
-a:hover:before{
-	transform: translateX(0);
-	z-index:-1;
-}
-a:hover{
-	color:#fff;
-}
+
 
 body {
     list-style: none;
