@@ -16,16 +16,7 @@
 }
 
 /* neon text */
-.body{
-/* 	background-color: black;
- 	color: #0000; */
-	display: flex; 
-	align-items: center;
-	justify-content:center;
-/* 	min-height:100vh;
-	font-family: 'Pacifico', cursive;
-	font-size: 5rem; */
-}
+
 .text-neon > span{
 	text-transform: uppercase;
 	animation:glow 3s ease-in-out infinite;
