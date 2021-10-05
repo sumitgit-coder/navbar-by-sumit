@@ -16,7 +16,7 @@
 }
 
 /* neon text */
-body{
+.text-neon{
 	background-color: black;
 	color: #111;
 	display: flex;
