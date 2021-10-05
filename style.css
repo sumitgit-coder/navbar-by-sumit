@@ -16,7 +16,7 @@
 }
 
 /* neon text */
-.text-neon{
+.text-neon >span{
 	background-color: black;
  	color: #0000;
 	display: flex; 
