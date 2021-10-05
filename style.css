@@ -153,6 +153,8 @@ a:hover {
     nav ul li a {
         font-size: 16px;
     }
+	.text-neon{
+		font-size:16px;
 }
 
 @media (max-width:858px) {
@@ -194,6 +196,8 @@ a:hover {
     .copy {
         display: block;
     }
+	.text-neon{
+		font-size:16px;
 }
 
 
